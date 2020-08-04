@@ -10,7 +10,7 @@ console.log('guessing game' + guessGame);
 if(guessGame.toLowerCase() === 'yes' || guessGame === 'y'){
     alert('That\'s great! I am excited to tell you more about myself!');
 }   else if(guessGame.toLowerCase() === 'no' || guessGame ==='n'){
-    alert('That\'s too bad! I really wanted to tell you more about myself');
+    alert('That\'s too bad! I really wanted to tell you more about myself.');
 }   else {
     alert('Please enter yes/no or y/n)');
 }

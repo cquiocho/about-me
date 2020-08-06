@@ -9,6 +9,8 @@ console.log('guessing game' + guessGame);
 
 var finalScore = 0;
 
+function questionOne(){
+
 if(guessGame.toLowerCase() === 'yes' || guessGame === 'y'){
     alert('That\'s great! I am excited to tell you more about myself!');
 }   else if(guessGame.toLowerCase() === 'no' || guessGame ==='n'){
@@ -16,6 +18,10 @@ if(guessGame.toLowerCase() === 'yes' || guessGame === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+}
+questionOne();
+
+function questionTwo() {
 var homeTown = prompt('Am I originally from Seattle, WA?');
 console.log('my home town' + homeTown);
 
@@ -26,6 +32,10 @@ if(homeTown.toLowerCase() === 'yes' || homeTown === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+}
+questionTwo();
+
+function questionThree() {
 var outDoor = prompt('Is the Pacific Northwest great for year round outdoor activities?');
 console.log('outdoor activites' + outDoor);
 
@@ -36,6 +46,10 @@ if(outDoor.toLowerCase() === 'yes' || outDoor === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+}
+questionThree();
+
+function questionFour(){
 var collegeDegrees = prompt('Do I have multiple college degrees?');
 console.log('my college degrees' + collegeDegrees);
 
@@ -46,6 +60,10 @@ if(collegeDegrees.toLowerCase() === 'yes' || collegeDegrees === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+}
+questionFour();
+
+function questionFive(){
 var codeFellows = prompt('Is a career in Software Development in my future?');
 console.log('software development' + codeFellows);
 
@@ -56,6 +74,10 @@ if(codeFellows.toLowerCase() === 'yes' || codeFellows === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+}
+questionFive();
+
+function questionSix() {
 var answer = 2;
 
 for (var i = 0; i < 4; i++){
@@ -73,7 +95,10 @@ for (var i = 0; i < 4; i++){
         break;
     }
 }
+}
+questionSix();
 
+function questionSeven(){
 var countries = ['Thailand', 'Japan', 'Taiwan', 'Korea'];
 
 for (var i = 0; i < 6; i++){
@@ -95,5 +120,7 @@ for (var i = 0; i < 6; i++){
         alert('You are out of guesses! I would like to visit Thailand, Japan, Taiwan or Korea.');
     }
 }
+}
+questionSeven();
 
 alert(userName + ', mahalo for spending a little time learning more about me, but most of all, I hope you had fun!');

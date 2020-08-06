@@ -24,10 +24,20 @@ img {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 40%;
-    
 }
 
 p {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+h2 {
+    font-style: initial;
+    text-align: center;
+    text-decoration: underline;
+}
+
+li {
+    text-align: center;
+}
+

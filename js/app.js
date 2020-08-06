@@ -54,4 +54,44 @@ if(codeFellows.toLowerCase() === 'yes' || codeFellows === 'y'){
 }   else {
     alert('Please enter yes/no or y/n)');
 }
+var answer = 2;
+
+for (var i = 0; i < 4; i++){
+var myDogs = prompt('Can you guess how many dogs I have?');
+if  (parseInt(myDogs) < answer){
+    alert('I have more than that. Please try again.');
+}   else if(parseInt(myDogs) > answer){
+    alert('Too many! I wouldn\'t be able to afford them. Please try again.');
+}   else if(parseInt(myDogs) === answer){
+    alert('You are absolutely correct! I have two dogs named Noa and Nina.');
+    break;
+}
+if (i === 3){
+    alert('You are out of guesses! I have 2 dogs named Noa and Nina.');
+    break;
+}
+}
+
+var countries = ['Thailand', 'Japan', 'Taiwan', 'Korea'];
+
+for (var i = 0; i < 6; i++){
+    var whatAsia = prompt('Can you guess a country in Asia that I would like to visit?');
+    var answeredCorrect = false
+    // This loop only checks for correct answers.
+    for (var j = 0; j < countries.length; j++){
+        if (countries[j].toLowerCase() === whatAsia){
+            alert('You are correct! I would like to visit Thailand, Japan, Taiwan or Korea.');
+            answeredCorrect = true
+        }   
+    }
+    if (answeredCorrect === true){
+        break;
+    }   else {
+        alert('You are incorrect. Please try again.');  
+    }   
+    if (i === 6){
+        alert('You are out of guesses! I would like to visit Thailand, Japan, Taiwan or Korea.');
+    }
+}
+
 alert(userName + ', mahalo for spending a little time learning more about me, but most of all, I hope you had fun!');

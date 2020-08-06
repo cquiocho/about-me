@@ -7,6 +7,8 @@ alert('Aloha ' + userName + '! Mahalo for visiting today!');
 var guessGame = prompt(userName + ', would you like to play a guessing game?');
 console.log('guessing game' + guessGame);
 
+var finalScore = 0;
+
 if(guessGame.toLowerCase() === 'yes' || guessGame === 'y'){
     alert('That\'s great! I am excited to tell you more about myself!');
 }   else if(guessGame.toLowerCase() === 'no' || guessGame ==='n'){
@@ -38,9 +40,9 @@ var collegeDegrees = prompt('Do I have multiple college degrees?');
 console.log('my college degrees' + collegeDegrees);
 
 if(collegeDegrees.toLowerCase() === 'yes' || collegeDegrees === 'y'){
-    alert('I do. I have a Bachelor of Arts Degree in Political Science and a Bachelor of Fine Arts in Dance Theatre. Just one more question to go!');
+    alert('I do. I have a Bachelor of Arts Degree in Political Science and a Bachelor of Fine Arts in Dance Theatre.');
 }   else if(collegeDegrees.toLowerCase() === 'no' || collegeDegrees ==='n'){
-    alert('I do. I have a Bachelor of Arts Degree in Political Science and a Bachelor of Fine Arts in Dance Theatre. Just one more question to go!');
+    alert('I do. I have a Bachelor of Arts Degree in Political Science and a Bachelor of Fine Arts in Dance Theatre.');
 }   else {
     alert('Please enter yes/no or y/n)');
 }
@@ -89,7 +91,7 @@ for (var i = 0; i < 6; i++){
     }   else {
         alert('You are incorrect. Please try again.');  
     }   
-    if (i === 6){
+    if (i === 5){
         alert('You are out of guesses! I would like to visit Thailand, Japan, Taiwan or Korea.');
     }
 }

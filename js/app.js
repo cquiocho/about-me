@@ -57,19 +57,19 @@ if(codeFellows.toLowerCase() === 'yes' || codeFellows === 'y'){
 var answer = 2;
 
 for (var i = 0; i < 4; i++){
-var myDogs = prompt('Can you guess how many dogs I have?');
-if  (parseInt(myDogs) < answer){
-    alert('I have more than that. Please try again.');
-}   else if(parseInt(myDogs) > answer){
-    alert('Too many! I wouldn\'t be able to afford them. Please try again.');
-}   else if(parseInt(myDogs) === answer){
-    alert('You are absolutely correct! I have two dogs named Noa and Nina.');
-    break;
-}
-if (i === 3){
-    alert('You are out of guesses! I have 2 dogs named Noa and Nina.');
-    break;
-}
+    var myDogs = prompt('Can you guess how many dogs I have?');
+    if  (parseInt(myDogs) < answer){
+        alert('I have more than that. Please try again.');
+    }   else if(parseInt(myDogs) > answer){
+        alert('Too many! I wouldn\'t be able to afford them. Please try again.');
+    }   else if(parseInt(myDogs) === answer){
+        alert('You are absolutely correct! I have two dogs named Noa and Nina.');
+        break;
+    }
+    if (i === 3){
+        alert('You are out of guesses! I have 2 dogs named Noa and Nina.');
+        break;
+    }
 }
 
 var countries = ['Thailand', 'Japan', 'Taiwan', 'Korea'];
